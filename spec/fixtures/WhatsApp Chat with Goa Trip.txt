@@ -1,0 +1,14 @@
+8:13AM, Sep 16 - Akhil Stanslavose: Hello fellows! Welcome to test fixture!
+8:16AM, Sep 16 - Ebin Bastian: What is this?
+8:17AM, Sep 16 - Akhil Stanslavose: Fixture is the dummy data!
+8:19AM, Sep 16 - Mariya Fredrics: Oho, so what do we need to do?
+8:41AM, Sep 16 - Akhil Stanslavose: Start adding the mony you spent eg., +500 Tickets for Captain America
+8:51AM, Sep 16 - Mariya Fredrics: Ok, cool!
+8:55AM, Sep 16 - Mariya Fredrics: +500 Tickets for Captain America
+9:01AM, Sep 16 - Jones Janarth: Eda I have also made contributions
+8:18AM, Sep 16 - Jones Janarth: +450 Lunch at McDonalds
+8:23AM, Sep 16 - Jones Janarth: Oops I that was wrong, I meant 350
+8:33AM, Sep 16 - Akhil Stanslavose: That is ok, you can just subtract 100 by sending, -100 Lunch at McDonalds
+8:40AM, Sep 16 - Jones Janarth: -100 Lunch at McDonalds
+8:41AM, Sep 16 - Ebin Bastian: What the hell here is what I have put
+8:51AM, Sep 16 - Ebin Bastian: +800 Tickets to Goa

@@ -1,0 +1,50 @@
+#!/usr/bin/env ruby
+$: << File.expand_path("#{File.dirname(__FILE__)}/../lib")
+
+require 'lowg'
+
+require 'mailman'
+require 'pry'
+
+Mailman.config.pop3 = {
+  :username => 'mail@lowg.in',
+  :password => 'REPLACE_WITH_PASSWORD',
+  :server   => 'pop.zoho.com',
+  :port     => 995, # you can usually omit this, but it's there
+  :ssl      => true # defaults to false
+}
+
+Mail.defaults do
+  delivery_method(:smtp, {
+    :address => 'smtp.zoho.com',
+    :port => 587,
+    :user_name => 'mail@lowg.in',
+    :password => 'shegotasmile',
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  })
+end
+
+Mailman::Application.run do
+
+  default do
+
+    conversation = Lowg::Conversation.parse(
+      message[:from].display_names.first,
+      message.from_addrs.first,
+      message.attachments.first.read
+    )
+
+    summary_mail = Lowg::SummaryMail.new(conversation)
+
+    reply = message.reply do
+      html_part do
+        content_type 'text/html; charset=UTF-8'
+        body summary_mail.html
+      end
+    end
+
+    reply.deliver
+  end
+
+end
